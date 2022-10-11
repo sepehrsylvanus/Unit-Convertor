@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
+<head id="head-el">
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,7 +16,11 @@
 
 <body>
   <main class="d-flex justify-content-center align-middle align-items-center">
-    <div class="app-container border">
+    <div class="app-container border position-relative">
+      <div class="form-check form-check-reverse form-switch position-absolute top-0 end-0" id="dark-toggle">
+        <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+        <label class="form-check-label text-white" for="flexSwitchCheckDefault">Default switch checkbox input</label>
+      </div>
       <div class="app-up p-5  text-center ">
         <p class="app-title text-white fw-bold ">Metric/Imperial Unit Conversion </p>
         <input size="2" maxlength="5" class="app-input mb-4  rounded-1  p-2 text-center text-white fw-bold fs-2" type="text"
@@ -25,18 +29,18 @@
         <button id="convert-btn" class="convert-btn btn btn-light mb-2">Convert</button><br>
         <!-- <button id="clear-btn" class="clear-btn btn btn-light">Clear</button> -->
       </div>
-      <div class="app-down text-center p-4">
+      <div id="appdown"class="app-down text-center p-4">
         <div class="units length-unit p-2  mb-3  ">
           <p class="mass-title mb-1">Length (Meter/Feet)</p>
-          <p id="meter">? meters = ? feet | ? feet = ? meters </p>
+          <p class="unitSecondP" id="meter">? meters = ? feet | ? feet = ? meters </p>
         </div>
         <div class="units volume-unit p-2  mb-3  ">
           <p class="mass-title mb-1">Volume (Liters/Gallons)</p>
-          <p id="liter">? liters = ? gallons | ? gallons = ? liters</p>
+          <p class="unitSecondP" id="liter">? liters = ? gallons | ? gallons = ? liters</p>
         </div>
         <div class="units mass-unit p-2   ">
           <p class="mass-title mb-1">Mass (Kilograms/Pounds)</p>
-          <p id="pound">? kilos = ? pounds | ? pounds = ? kilos</p>
+          <p class="unitSecondP" id="pound">? kilos = ? pounds | ? pounds = ? kilos</p>
         </div>
       </div>
     </div>

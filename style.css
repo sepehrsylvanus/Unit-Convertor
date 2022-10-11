@@ -4,8 +4,15 @@ body {
 main {
   height: 100vh;
 }
+:root {
+  --first-color: #f4f4f4;
+  --second-color: white;
+  --third-color: #353535;
+  --title-color: #5A537B;
+
+}
 .app-container .app-up {
-  background-color: #6943ff;
+  background-color: #2c08ba;
 }
 .app-container .app-up .app-title {
   font-size: 2rem;
@@ -16,12 +23,22 @@ main {
   width: fit-content;
 }
 .app-container .app-down {
-  background-color: #f4f4f4;
+  background-color: var(--first-color);
 }
 .app-container .app-down .units {
-  background-color: white;
+  background-color: var(--second-color);
+}
+.app-container .app-down .units .unitSecondP {
+  color: var(--third-color);
 }
 .app-container .app-down .units .mass-title {
-  color: #5a537b;
+  color: var(--title-color);
   font-weight: bold;
+}
+.dark-mode {
+  --first-color: #1f2937;
+  --second-color: #273549;
+  --third-color: white;
+  --title-color: #CCC1FF;
+
 }
