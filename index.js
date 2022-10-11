@@ -8,6 +8,10 @@ const poundOutput = document.querySelector('#pound')
 const convertBtn = document.querySelector('#convert-btn')
 const clearBtn = document.querySelector('#clear-btn')
 let unitInput = document.querySelector('#unit').value
+const darkModeToggler = document.querySelector('#dark-toggle')
+const appDown = document.querySelector('#appdown')
+const units = document.querySelectorAll('.units')
+const themeLabel = document.querySelector('#themeLabel')
 
 
 convertBtn.addEventListener('click', function () {
@@ -23,9 +27,16 @@ convertBtn.addEventListener('click', function () {
 
 
 })
-clearBtn.addEventListener('click', function(){
-    unitInput = ''
+// clearBtn.addEventListener('click', function(){
+//     unitInput = ''
 
 
+// })
+darkModeToggler.addEventListener('click', function(){
+    appDown.classList.toggle('dark-mode')
+    units.classList.toggle('dark-mode')
 })
-
+themeLabel.addEventListener('click', function(){
+    appDown.classList.toggle('dark-mode')
+    units.classList.toggle('dark-mode')
+})
