@@ -1,0 +1,27 @@
+body {
+  background-color: #1c1c1c !important;
+}
+main {
+  height: 100vh;
+}
+.app-container .app-up {
+  background-color: #6943ff;
+}
+.app-container .app-up .app-title {
+  font-size: 2rem;
+}
+.app-container .app-up .app-input {
+  background: none;
+  border: 1px solid #b295ff;
+  width: fit-content;
+}
+.app-container .app-down {
+  background-color: #f4f4f4;
+}
+.app-container .app-down .units {
+  background-color: white;
+}
+.app-container .app-down .units .mass-title {
+  color: #5a537b;
+  font-weight: bold;
+}

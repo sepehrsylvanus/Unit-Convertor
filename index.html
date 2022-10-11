@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+    crossorigin="anonymous"></script>
+  <title>Unit Convertor</title>
+</head>
+
+<body>
+  <main class="d-flex justify-content-center align-middle align-items-center">
+    <div class="app-container border">
+      <div class="app-up p-5  text-center ">
+        <p class="app-title text-white fw-bold ">Metric/Imperial Unit Conversion </p>
+        <input size="2" maxlength="5" class="app-input mb-4  rounded-1  p-2 text-center text-white fw-bold fs-2" type="text"
+          name="" id="unit">
+        <br>
+        <button id="convert-btn" class="convert-btn btn btn-light mb-2">Convert</button><br>
+        <!-- <button id="clear-btn" class="clear-btn btn btn-light">Clear</button> -->
+      </div>
+      <div class="app-down text-center p-4">
+        <div class="units length-unit p-2  mb-3  ">
+          <p class="mass-title mb-1">Length (Meter/Feet)</p>
+          <p id="meter">? meters = ? feet | ? feet = ? meters </p>
+        </div>
+        <div class="units volume-unit p-2  mb-3  ">
+          <p class="mass-title mb-1">Volume (Liters/Gallons)</p>
+          <p id="liter">? liters = ? gallons | ? gallons = ? liters</p>
+        </div>
+        <div class="units mass-unit p-2   ">
+          <p class="mass-title mb-1">Mass (Kilograms/Pounds)</p>
+          <p id="pound">? kilos = ? pounds | ? pounds = ? kilos</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+<script src="./index.js"></script>
+
+</html>
